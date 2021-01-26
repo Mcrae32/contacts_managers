@@ -1,0 +1,119 @@
+// проверяем, поддерживает ли браузер объект Clipboard
+// если нет создаем элемент с атрибутом contenteditable
+if (!window.Clipboard) {
+   var pasteCatcher = document.createElement("div");
+    
+   // Firefox вставляет все изображения в элементы с contenteditable
+   pasteCatcher.setAttribute("contenteditable", "");
+    
+   pasteCatcher.style.display = "none";
+   $("body").append(pasteCatcher);
+ 
+   // элемент должен быть в фокусе
+   pasteCatcher.focus();
+   document.addEventListener("click", function() { pasteCatcher.focus(); });
+} 
+// добавляем обработчик событию
+window.addEventListener("paste", pasteHandler);
+ 
+function pasteHandler(e) {
+// если поддерживается event.clipboardData (Chrome)
+      if (e.clipboardData) {
+      // получаем все содержимое буфера
+      var items = e.clipboardData.items;
+      if (items) {
+         // находим изображение
+         for (var i = 0; i < items.length; i++) {
+            if (items[i].type.indexOf("image") !== -1) {
+               // представляем изображение в виде файла
+               var blob = items[i].getAsFile();
+			   
+			   
+			    var reader = new FileReader();
+					// this function is triggered once a call to readAsDataURL returns
+					reader.onload = function(event){
+						
+						UploadBlobData(event.target.result);
+						
+					};      
+					// trigger the read from the reader...
+					reader.readAsDataURL(blob);
+			  
+               // создаем временный урл объекта
+               var URLObj = window.URL || window.webkitURL;
+               var source = URLObj.createObjectURL(blob);                
+               // добавляем картинку в DOM
+               createImage(source);
+            }
+         }
+      }
+   // для Firefox проверяем элемент с атрибутом contenteditable
+   } else {      
+      setTimeout(checkInput, 1);
+   }
+}
+
+function checkInput() {
+    var child = pasteCatcher.childNodes[0];   
+   pasteCatcher.innerHTML = "";    
+   if (child) {
+// если пользователь вставил изображение – создаем изображение
+      if (child.tagName === "IMG") {
+         createImage(child.src);
+      }
+   }
+}
+
+function UploadBlobData(d){
+	var fd = new FormData();
+	fd.append('data', d);
+	$.ajax({
+		type: 'POST',
+		url: '/paste_image/upload.php',
+		data: fd,
+		processData: false,
+		contentType: false
+	}).done(function(data) {
+		InsertImageUrl(data,"MESSAGE");
+	});
+}
+
+function createImage(source) {
+   var pastedImage = new Image();
+   pastedImage.onload = function() {
+      // теперь у нас есть изображение из буфера
+					
+   }
+   pastedImage.src = source;
+}
+
+function InsertImageUrl(url,textarea_id) {
+	document.getElementById(textarea_id).focus();
+	if (document.selection) {    
+		var rng = document.selection.createRange();
+		if (rng.text) {
+			document.selection.createRange().text = url + rng.text;
+		} else {
+			document.getElementById(textarea_id).value += url;
+		}
+		document.getElementById(textarea_id).focus();
+	}
+	else if (document.getElementById(textarea_id).selectionStart || document.getElementById(textarea_id).selectionStart == '0') {
+		var selStart = document.getElementById(textarea_id).selectionStart;
+		var selEnd = document.getElementById(textarea_id).selectionEnd;
+		var s = document.getElementById(textarea_id).value;    
+		s = s.substring(0, selStart) + url + s.substring(selStart, selEnd) + s.substring(selEnd, s.length);
+		document.getElementById(textarea_id).value = s;
+		if (selEnd != selStart) {
+			document.getElementById(textarea_id).selectionStart = selStart;
+			document.getElementById(textarea_id).selectionEnd = selEnd + url.length;
+		} else {
+			document.getElementById(textarea_id).selectionStart = selStart + url.length;
+			document.getElementById(textarea_id).selectionEnd = document.getElementById(textarea_id).selectionStart;
+		}
+	} else {  
+		document.getElementById(textarea_id).value += url;  
+	}
+}
+
+

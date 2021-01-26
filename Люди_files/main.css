@@ -1,0 +1,667 @@
+@media screen and (orientation: landscape) and (max-width:760px) {
+	.landscape-min-width {
+		max-width: 20% !important;
+		float: left !important;
+	}
+
+	.landscape-max-width {
+		max-width: 80% !important;
+		float: left !important;
+		margin: 0 !important;	
+	}
+}
+
+.data-table tr td {
+padding: 3px 5px;
+border: 1px solid #969494;
+}
+
+.news-detail .img-responsive {
+display: inline-block;
+}
+
+@font-face {
+    font-family: 'Christmas ScriptC';
+    src: local('../../fonts/Christmas ScriptC'), local('../../fonts/ChristmasScriptC'), url('../../fonts/christmasscriptc.woff2') format('woff2'), url('../../fonts/christmasscriptc.woff') format('woff'), url('../../fonts/christmasscriptc.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*animation*/
+.wrapEl {
+	position: relative;
+	margin-top: 2%;
+	height: 456px;
+}
+
+.ballsIE {
+    position: absolute;
+    z-index: 4;
+    left: 3.5%;
+    top: 0%;
+}
+
+.hideMob {
+    display: none;
+}
+
+.hideComp {
+    display: block;
+}
+
+.el {
+    left: 7%;
+    position: absolute;
+    top: 4%;
+    width: 84%;
+z-index: 2;
+}
+
+.hideBrow {
+    position: absolute;
+    z-index: -1;
+    left: 3%;
+    top: 0%;
+    display: none;
+    width: 100%;
+}
+
+.wrapEl iframe.background {
+  height: auto !important;
+  padding: 0;
+  width: 100%;
+  max-width: 730px;
+  min-height: 450px;
+  position: absolute;
+  z-index: -1;
+}
+
+.wrapEl iframe.ballsFrame {
+	height: auto !important;
+	padding: 0;
+	width: 100%;
+	max-width: 700px;
+	min-height: 450px;
+	position: absolute;
+	z-index: 3;
+	left: 17px;
+	top: -21%;
+}
+/*sohranil backup
+.wrapEl iframe.background {
+  height: auto !important;
+  padding: 0;
+  width: 100% !important;
+  max-width: 730px;
+  min-height: 450px;
+}
+
+.wrapEl iframe.ballsFrame {
+  height: auto !important;
+  padding: 0;
+  width: 100% !important;
+  max-width: 700px;
+  min-height: 450px;
+  position: absolute;
+  z-index: 3;
+  left: 34px;
+  top: -1%;
+}
+*/
+
+#ballsActivcont {
+    height: 456px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+	z-index: 1000;
+}
+
+#ball1, #ball2, #ball3, #ball4, #ball5, #ball6, #ball7, #ball8, #ball9, #ball10, #ball11, #ball12 {
+	position: absolute;
+	width: 3.5%;
+	height: 6%;
+	border-radius: 50%;
+	z-index: 5;
+	cursor: pointer;
+	display: block;
+}
+
+.ball {
+    display: block;
+    color: rgba(100, 100, 100, 0);
+}
+
+#ball1 {
+    left: 49%;
+    top: 27%;
+    border-radius: 50%;
+}
+
+#ball1:hover,
+#ball1:active,
+#ball2:hover,
+#ball2:active,
+#ball3:hover,
+#ball3:active,
+#ball4:hover,
+#ball4:active,
+#ball5:hover,
+#ball5:active,
+#ball6:hover,
+#ball6:active,
+#ball7:hover,
+#ball7:active,
+#ball8:hover,
+#ball8:active,
+#ball9:hover,
+#ball9:active,
+#ball10:hover,
+#ball10:active,
+#ball11:hover,
+#ball11:active,
+#ball12:hover,
+#ball12:active {
+    box-shadow: 0 0 8px #fff;
+    -webkit-transition: all 0.5s ease-out 0.1s;
+       -moz-transition: all 0.5s ease-out 0.1s;
+         -o-transition: all 0.5s ease-out 0.1s;
+            transition: all 0.5s ease-out 0.1s;
+}
+
+#ball2 {
+    left: 44.5%;
+    top: 32%;
+}
+
+#ball3 {
+    left: 49.8%;
+    top: 39.5%;
+}
+
+#ball4 {
+    left: 44.5%;
+    top: 43.5%;
+}
+
+#ball5 {
+    left: 39.2%;
+    top: 47.5%;
+}
+
+#ball6 {
+    left: 53.3%;
+    top: 47.7%;
+}
+
+#ball7 {
+    left: 47.5%;
+    top: 52%;
+}
+
+#ball8 {
+    left: 41.8%;
+    top: 57%;
+}
+
+#ball9 {
+    left: 50.7%;
+    top: 59.5%;
+}
+
+#ball10 {
+    left: 46%;
+    top: 65.5%;
+}
+
+#ball11 {
+    left: 37.5%;
+    top: 69%;
+}
+
+#ball12 {
+    left: 54%;
+    top: 68.5%;
+}
+
+.helloText {
+    color: white;
+    font-size: 2.5em;
+    left: 11%;
+    position: absolute;
+    top: 11%;
+    font-family: "Christmas ScriptC";
+    font-style: normal;
+    font-weight: normal;
+}
+
+#dep {
+    color: #f6e3b3;
+    font-size: 0.9em;
+    left: 57.5%;
+    position: absolute;
+    top: 15%;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 3;
+}
+
+@font-face {
+    font-family: 'Christmas ScriptC';
+    src: local('../../fonts/Christmas ScriptC'), 
+    	 local('../../fonts/ChristmasScriptC'), 
+    	 url('../../fonts/christmasscriptc.woff2') format('woff2'), 
+    	 url('../../fonts/christmasscriptc.woff') format('woff'), 
+    	 url('../../fonts/christmasscriptc.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media only screen and (min-width:280px) and (max-width:766px) {
+    .wrapEl {
+	    display: none;
+	}
+}
+
+@media only screen and (min-width:767px) and (max-width:991px) {
+  .el {
+    left: 9%;
+    top: 7%;
+  }
+
+    #ballsActivcont {
+	    height: 456px;
+	    left: 2.5%;
+	    position: absolute;
+	    width: 100%;
+	}
+
+    #dep {
+        left: 65%;
+        top: 15%;
+    }
+
+    .wrapEl iframe.ballsFrame {
+      left: 38px;
+    }
+
+	.ballsIE {
+		left: 4%;
+		position: absolute;
+		top: 0;
+		width: 97%;
+		z-index: 4;
+	}
+}
+
+@media only screen and (min-width:992px) and (max-width:1199px) {
+  .el {
+    left: 11%;
+    top: 7%;
+  }
+  #ballsActivcont {
+    height: 417px;
+    left: 0;
+    position: absolute;
+    top: -1%;
+    width: 107.8%;
+  }
+
+    #dep {
+        left: 63%;
+        top: 12%;
+    }
+
+    .helloText {
+        top: 8%;
+    }
+
+    .wrapEl iframe.ballsFrame {
+      left: 21px;
+      top: -10px;
+      width: 644px;
+    }
+
+	.ballsIE {
+		left: 2%;
+		top: -1.5%;
+		width: 104.5%;
+	}
+
+    .wrapEl iframe.background {
+       width: 620px;
+    }
+
+}
+
+/*animation end*/
+
+/*new*/
+
+.infoCont {
+	padding:0 30px;
+	margin-bottom: 30px;
+}
+
+.informer {
+	background-color: #57B6DE;
+	color: white;
+	font-family: Arial;
+	text-transform: uppercase;
+text-align: center;
+}
+
+.informer.zag h4 {
+    display: inline-block;
+    font-size: 15px;
+    color: white;
+font-weight: bold;
+}
+
+.informer .row .gismeteo {
+	border-top: 3px solid #89d3f0;
+    border-right: 3px solid #89d3f0;
+    padding: 10px 18px;
+    text-align: center;
+max-height: 135px;
+}
+
+.gsInformer {
+    display: inline;
+}
+
+
+.informer .row .dataInf {
+    border-right: 2px solid #fff;
+    border-top: 3px solid #fff;
+    font-weight: normal;
+    height: 100%;
+    /*padding: 12px 4%;*/
+    text-align: center;
+}
+
+.informer .row .dataInf p {
+    font-size: 15px;
+    line-height: 23px;
+    margin-top: 10px;
+    padding: 0 15px;
+}
+
+.informer .row .dataInf h4 {
+	font-size: 16px;
+	font-weight: normal;
+    color: white;
+}
+
+.informer .row .interestInf{
+	text-align: center;
+	border-top: 3px solid #fff;
+}
+
+.informer .row .interestInf h5 {
+    color: white;
+    font-size: 18px;
+    font-weight: normal;
+margin: 8px 0;
+}
+
+/*new end*/
+
+
+.header-deco {
+	padding-bottom: 10px 0;
+	border-bottom: 1px solid #b9260f;
+}
+
+.breaker {
+	border-bottom: 1px dotted gray;
+}
+
+.full-width {
+	width: 100% !important;
+}
+
+.no-margin {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.red {
+	background: #b9260f !important;
+}
+
+.white {
+	background: #fff !important;
+}
+
+.green {
+	background: green !important;	
+}
+
+.gray {
+	background: gray !important;	
+}
+
+.clear {
+	clear:both;
+}
+
+.sotrudnikam-img {
+    padding: 15px;
+    text-align: center;
+}
+.sotrudnikam-img img {
+	max-height: 425px;
+	display: inline-block;
+}
+.sotrudnikam-description {
+    padding: 15px;
+}
+
+.border-deco {
+	border: 3px solid white;
+	box-shadow:0 1px 5px #CDCDCD;
+}
+
+.font-white {
+	color: #fff !important;
+}
+
+.font-red {
+	color: #b9260f !important;
+}
+
+.font-green {
+	color: green;
+}
+
+.font-gray {
+	color: gray;
+}
+
+.font-black {
+	color: #000 !important;
+}
+
+.hover-red {
+	background: #971500 !important;
+	color: #fff !important;
+}
+
+.margin-top {
+	margin-top: 20px;
+}
+
+.padding-top {
+	padding-top: 20px;
+}
+
+.margin-top-double {
+	margin-top: 40px;
+}
+
+.margin-bottom {
+	margin-bottom: 20px;
+}
+
+.top-blog {
+	background: #EEE8E8;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.footer {
+	margin-top: 20px;
+	padding: 26px 50px;
+}
+
+/* Slider */
+
+.previous {
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	top: 21%;
+	left: 3%;
+	z-index: 10;
+	background: url(../../img/controls.png) no-repeat;
+	border-radius: 50%;
+	box-shadow: 0 1px 5px #CDCDCD;
+}
+
+.previous:hover {
+	background: url(../../img/controls.png) no-repeat 0px -32px;
+}
+
+a.bx-prev {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.dr-today p a img{
+border: 3px solid #b9260f;
+box-shadow: 0 1px 5px #cdcdcd;
+}
+
+.navigation {
+margin-top: 25px;
+}
+
+.nav-tabs {
+    border-bottom: medium none;
+}
+
+.nav-tabs > li > a {
+    background-color: #e4513a;
+    border: 2px solid #e4513a;
+    border-radius: 4px;
+    color: #fff;
+    line-height: 1.42857;
+    margin: 3px;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    background-color: #fff;
+    border: 2px solid #e4513a;
+    color: #555;
+    cursor: default;
+}
+
+
+.next {
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	top: 21%;
+	right: 3%;
+	z-index: 10;
+	background: url(../../img/controls.png) no-repeat -43px 0px;
+	border-radius: 50%;
+	box-shadow: 0 1px 5px #CDCDCD;
+}
+
+.next:hover {
+	background: url(../../img/controls.png) no-repeat -43px -32px;
+}
+
+a.bx-next {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.nasheBg {
+	background: url(../../img/family.jpg) no-repeat;
+	padding: 200px;
+	background-opacity: 0.5;	
+	position: relative;
+}
+
+.nashePlate {
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.line-height-01 {
+	line-height: 1.5em !important;
+}
+
+/* Bootstrap rewrite */
+
+.navbar {
+	margin: 0 !important;
+}
+
+.navbar-default {
+	border-color: #971500 !important;
+}
+
+.navbar-default .navbar-nav>.open>a {
+	background: #971500 !important;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background: #fff;
+}
+
+.navbar-nav .open .dropdown-menu {
+	background: #fff !important;
+}
+
+.tCityTD {
+	max-width: 150px !important;
+}
+
+/* Weather widget rewrite */
+
+.gsInformer {
+	max-width: 260px !important;
+}
+
+.ui-helper-hidden-accessible {
+display: none;
+}
+
+.button_spoiler {
+    background: #B3230C;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.button_spoiler span {
+    display: inline-block;
+    padding: 3px 0px 0px 0px;
+}
+.button_spoiler span::after {
+    content: "Развернуть";
+    color: white;
+    font-weight: bold;
+    font-size: 0.85em;
+    line-height: 1.6;
+    letter-spacing: 1px;
+}
+
+.button_spoiler span.active::after {
+    content: "Скрыть";
+}

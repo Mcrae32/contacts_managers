@@ -1,0 +1,38 @@
+var users;
+
+$(document).ready(function(){
+
+
+          $('input[name="form_date_77"]').mask('99.99.9999');
+		  $('input[name="form_date_78"]').mask('99.99.9999');
+		  $('input[name="form_date_126"]').mask('99.99.9999');
+		  $('input[name="form_date_90"]').mask('99.99.9999');
+		  
+		   $('input[name="form_date_93"]').mask('99.99.9999');
+		   
+		    $('input[name="form_text_73"]').mask("+7 (999) 999-9999");
+			$('input[name="form_text_86"]').mask("+7 (999) 999-9999");
+			
+		   
+	   
+	$('.bxslider').bxSlider({
+  		pager: false,
+  		auto: false,
+		nextSelector: '.next',
+		prevSelector: '.previous',
+		nextText: '',
+		prevText: ''
+	});
+
+  	var options = {
+		page: 12,
+		plugins: [ ListPagination({}) ],
+		valueNames: [ { data:['ID'] },'NAME', 'SECOND_NAME', 'LAST_NAME', 'EMAIL', 'PERSONAL_MOBILE', 'WORK_DEPARTMENT', 'WORK_POSITION', 'PERSONAL_CITY', { name:'PICTURE', attr:'src'}],
+		item: '<li style="list-style-type:none;height:450px;overflow:hidden;" class="col-md-3 col-sm-4 col-xs-12 margin-bottom"><div class="col-md-12 breaker" style="height:450px;"><div class="col-md-12 col-sm-12 col-xs-12 text-center landscape-min-width no-margin" style="width:150px;height:150px;"><img class="PICTURE img-circle border-deco full-width" style="margin-top:3px;" src=""/></div><div class="clear"></div><h4 class="NAME"></h4><h4 class="SECOND_NAME"></h4><h4 class="LAST_NAME"></h4><p class="WORK_POSITION"></p><p class="WORK_DEPARTMENT"></p><p class="PERSONAL_MOBILE"></p><p class="EMAIL"></p><p class="PERSONAL_CITY"></p></div></li>'
+	};
+ 
+ 
+	var userList = new List('users', options, users);
+ 
+	//$("body").append('<script src="https://www.gismeteo.ru/api/informer/getinformer/?hash=YOMcFf7emVct3E" type="text/javascript"></script>');
+});

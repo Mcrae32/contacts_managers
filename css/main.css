@@ -1,0 +1,42 @@
+
+
+.red {
+	background: #b9260f;
+}
+
+.font-white {
+	color: #fff;
+}
+
+.font-red {
+	color: #b9260f;
+}
+
+.block_prev_container .button_spoiler span {
+	background: url("images/sprites.png") no-repeat 1px -28px;
+	width: 28px;
+	height: 28px;
+	display: inline-block;
+	padding: 8px 0px 9px 0px;
+	margin-left: -6%;
+}
+.spoiler-block .button_spoiler span::after {
+	content: "Подробнее";
+	color: white;
+	font-weight: bold;
+	padding-left: 37px;
+	letter-spacing: 0.5px;
+	font-size: 1.1em;
+	line-height: 1.6;
+}
+
+.spoiler-block .button_spoiler {
+	background: #c19b63;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+
+
+

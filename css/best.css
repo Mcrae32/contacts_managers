@@ -1,0 +1,23 @@
+.button_spoiler {
+    background: #B3230C;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.button_spoiler span {
+    display: inline-block;
+    padding: 3px 0px 0px 0px;
+}
+.button_spoiler span::after {
+    content: "Развернуть";
+    color: white;
+    font-weight: bold;
+    font-size: 0.85em;
+    line-height: 1.6;
+    letter-spacing: 1px;
+}
+
+.button_spoiler span.active::after {
+    content: "Скрыть";
+}

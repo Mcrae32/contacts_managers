@@ -1,0 +1,19 @@
+tbody {
+    border-color: inherit;
+    display: table-row-group;
+    vertical-align: middle;
+}
+
+tr {
+    border-color: inherit;
+    display: table-row;
+    vertical-align: inherit;
+}
+
+tr:nth-child(2n) {
+    background: #C9361F none repeat scroll 0 0;
+}
+
+table.data-table td {
+    padding-right: 20px;
+}

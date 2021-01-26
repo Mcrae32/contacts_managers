@@ -1,0 +1,212 @@
+.wrapEl iframe.ballsFrame-2017 {
+    height: auto !important;
+    padding: 0;
+    width: 100% !important;
+    max-width: 700px;
+    min-height: 450px;
+    position: absolute;
+    z-index: 3;
+    left: 1%;
+    top: -21%;
+}
+
+.el-2017 {
+    left: 29%;
+    position: absolute;
+    top: 3%;
+    width: 34%;
+    z-index: 2;
+}
+
+#ball1 {
+    left: 46.7%;
+	top: 6.2%;
+	border-radius: 50%;
+}
+#ball2 {
+    left: 47.2%;
+	top: 15.6%;
+}
+
+#ball3 {
+    left: 41.1%;
+    top: 20.2%;
+}
+
+#ball4 {
+    left: 50.5%;
+    top: 22.5%;
+}
+
+#ball5 {
+    left: 40.1%;
+    top: 32.1%;
+}
+
+#ball6 {
+    left: 49.2%;
+    top: 31.5%;
+}
+
+#ball7 {
+    left: 33%;
+    top: 38%;
+}
+
+#ball8 {
+    left: 41.5%;
+    top: 43%;
+}
+
+#ball9 {
+    left: 48.2%;
+    top: 42.5%;
+}
+
+#ball10 {
+    left: 56.6%;
+    top: 42.2%;
+}
+
+#ball11 {
+    left: 42.5%;
+    top: 51.6%;
+}
+
+#ball12 {
+    left: 51.7%;
+    top: 50.7%;
+}
+
+#ball13 {
+    left: 33.99%;
+    top: 55.9%;
+}
+
+#ball14 {
+    left: 46.1%;
+    top: 58.7%;
+}
+
+#ball15 {
+    left: 55.7%;
+    top: 56.9%;
+}
+
+#ball16 {
+    left: 28.9%;
+    top: 63.5%;
+}
+
+#ball17 {
+    left: 36.1%;
+    top: 65.9%;
+}
+
+#ball18 {
+    left: 43.5%;
+    top: 67.9%;
+}
+
+#ball19 {
+    left: 52.5%;
+    top: 67.9%;
+}
+
+#ball20 {
+    left: 59.9%;
+    top: 63.7%;
+}
+
+#ball1, #ball2, #ball3, #ball4, #ball5, #ball6, #ball7, #ball8, 
+#ball9, #ball10, #ball11, #ball12, #ball13, #ball14, #ball15, #ball16, 
+#ball17, #ball18, #ball19, #ball20 {
+	position: absolute;
+	width: 3.5%;
+	height: 6%;
+	border-radius: 50%;
+	z-index: 5;
+	cursor: pointer;
+    display: block;
+}
+
+.ballsIE {
+    position: absolute;
+    z-index: 4;
+    left: 0.75%;
+    top: -3.2%;
+}
+
+#ball1:hover,
+#ball1:active,
+#ball2:hover,
+#ball2:active,
+#ball3:hover,
+#ball3:active,
+#ball4:hover,
+#ball4:active,
+#ball5:hover,
+#ball5:active,
+#ball6:hover,
+#ball6:active,
+#ball7:hover,
+#ball7:active,
+#ball8:hover,
+#ball8:active,
+#ball9:hover,
+#ball9:active,
+#ball10:hover,
+#ball10:active,
+#ball11:hover,
+#ball11:active,
+#ball12:hover,
+#ball12:active,
+#ball13:hover,
+#ball13:active,
+#ball14:hover,
+#ball14:active,
+#ball15:hover,
+#ball15:active,
+#ball16:hover,
+#ball16:active,
+#ball17:hover,
+#ball17:active,
+#ball18:hover,
+#ball18:active,
+#ball19:hover,
+#ball19:active,
+#ball20:hover,
+#ball20:active {
+    box-shadow: 0 0 8px #fff;
+    -webkit-transition: all 0.5s ease-out 0.1s;
+       -moz-transition: all 0.5s ease-out 0.1s;
+         -o-transition: all 0.5s ease-out 0.1s;
+            transition: all 0.5s ease-out 0.1s;
+}
+
+@media only screen and (min-width:992px) and (max-width:1199px) {
+	.wrapEl iframe.ballsFrame-2017 {
+	    left: -3%;
+	}
+
+	#ballsActivcont {
+	    left: -23px;
+	    top: -3%;
+	}
+
+
+}
+
+@media only screen and (min-width:767px) and (max-width:991px) {
+	.wrapEl iframe.ballsFrame-2017 {
+	    left: -2%;
+	    top: -23%;
+	}
+
+	#ballsActivcont {
+	    left: -3px;
+	    top: -1.9%;
+	}
+
+
+}

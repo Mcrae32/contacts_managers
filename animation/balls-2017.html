@@ -1,0 +1,288 @@
+<!--
+	NOTES:
+	1. All tokens are represented by '$' sign in the template.
+	2. You can write your code only wherever mentioned.
+	3. All occurrences of existing tokens will be replaced by their appropriate values.
+	4. Blank lines will be removed automatically.
+	5. Remove unnecessary comments before creating your template.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="authoring-tool" content="Adobe_Animate_CC">
+<title>balls-2017</title>
+<!-- write your code here -->
+<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+<script>
+(function (lib, img, cjs, ss) {
+var p; // shortcut to reference prototypes
+// library properties:
+lib.properties = {
+	width: 730,
+	height: 450,
+	fps: 24,
+	color: "#006699",
+	opacity: 0.00,
+	manifest: [
+		{src:"images/balls_2017_atlas_.png?1512118581090", id:"balls_2017_atlas_"}
+	]
+};
+lib.ssMetadata = [
+		{name:"balls_2017_atlas_", frames: [[306,0,47,52],[306,54,22,28],[0,0,304,352]]}
+];
+// symbols:
+(lib.ballRed = function() {
+	this.spriteSheet = ss["balls_2017_atlas_"];
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+(lib.ballYellou = function() {
+	this.spriteSheet = ss["balls_2017_atlas_"];
+	this.gotoAndStop(1);
+}).prototype = p = new cjs.Sprite();
+(lib.logo = function() {
+	this.spriteSheet = ss["balls_2017_atlas_"];
+	this.gotoAndStop(2);
+}).prototype = p = new cjs.Sprite();
+(lib.Желтыйшар = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+	// Слой 1
+	this.instance = new lib.ballYellou();
+	this.instance.setTransform(-8.2,0,0.75,0.75);
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-8.2,0,16.5,21);
+(lib.Анимация3 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+	// Слой 1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.rf(["rgba(255,255,255,0)","#FFFFFA","rgba(255,255,250,0.639)","rgba(255,255,255,0)","rgba(255,255,255,0)","rgba(255,255,255,0)"],[0,0,0.004,0.835,1,1],0,0,0,0,0,13).s().p("AhXBYQgkglAAgzQAAgyAkglQAlgkAyAAQArAAAiAaIALAKQAkAlAAAyQAAAdgLAYQgKATgPAQQgYAWgdAJQgRAFgSAAQgyAAglgkg");
+	this.shape.setTransform(-53.1,0);
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.rf(["rgba(255,255,254,0)","rgba(255,255,251,0.859)","rgba(255,255,251,0.549)","rgba(255,255,255,0)","rgba(255,255,255,0)","rgba(255,255,255,0)"],[0,0,0.071,0.859,1,1],0,0,0,0,0,13).s().p("AhXBYQgkglAAgzQAAgyAkglQAlgkAyAAQArAAAiAaIALAKQAkAlAAAyQAAAdgLAYQgKATgPAQQgYAWgdAJQgRAFgSAAQgyAAglgkg");
+	this.shape_1.setTransform(-53.1,0);
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.rf(["rgba(255,255,254,0)","rgba(255,255,251,0.714)","rgba(255,255,251,0.455)","rgba(255,255,255,0)","rgba(255,255,255,0)","rgba(255,255,255,0)"],[0,0,0.133,0.882,1,1],0,0,0,0,0,13).s().p("AhXBYQgkglAAgzQAAgyAkglQAlgkAyAAQArAAAiAaIALAKQAkAlAAAyQAAAdgLAYQgKATgPAQQgYAWgdAJQgRAFgSAAQgyAAglgkg");
+	this.shape_2.setTransform(-53.1,0);
+	this.shape_3 = new cjs.Shape();
+	this.shape_3.graphics.rf(["rgba(255,255,253,0)","rgba(255,255,252,0.573)","rgba(255,255,252,0.365)","rgba(255,255,255,0)","rgba(255,255,255,0)","rgba(255,255,255,0)"],[0,0,0.2,0.906,1,1],0,0,0,0,0,13).s().p("AhXBYQgkglAAgzQAAgyAkglQAlgkAyAAQArAAAiAaIALAKQAkAlAAAyQAAAdgLAYQgKATgPAQQgYAWgdAJQgRAFgSAAQgyAAglgkg");
+	this.shape_3.setTransform(-53.1,0);
+	this.shape_4 = new cjs.Shape();
+	this.shape_4.graphics.rf(["rgba(255,255,252,0)","rgba(255,255,253,0.427)","rgba(255,255,253,0.275)","rgba(255,255,255,0)","rgba(255,255,255,0)","rgba(255,255,255,0)"],[0,0,0.267,0.929,1,1],0,0,0,0,0,13).s().p("AhXBYQgkglAAgzQAAgyAkglQAlgkAyAAQArAAAiAaIALAKQAkAlAAAyQAAAdgLAYQgKATgPAQQgYAWgdAJQgRAFgSAAQgyAAglgkg");
+	this.shape_4.setTransform(-53.1,0);
+	this.shape_5 = new cjs.Shape();
+	this.shape_5.graphics.rf(["rgba(255,255,251,0)","rgba(255,255,254,0.286)","rgba(255,255,254,0.184)","rgba(255,255,255,0)","rgba(255,255,255,0)","rgba(255,255,255,0)"],[0,0,0.333,0.953,1,1],0,0,0,0,0,13).s().p("AhXBYQgkglAAgzQAAgyAkglQAlgkAyAAQArAAAiAaIALAKQAkAlAAAyQAAAdgLAYQgKATgPAQQgYAWgdAJQgRAFgSAAQgyAAglgkg");
+	this.shape_5.setTransform(-53.1,0);
+	this.shape_6 = new cjs.Shape();
+	this.shape_6.graphics.rf(["rgba(255,255,251,0)","rgba(255,255,254,0.141)","rgba(255,255,254,0.09)","rgba(255,255,255,0)","rgba(255,255,255,0)","rgba(255,255,255,0)"],[0,0,0.396,0.976,1,1],0,0,0,0,0,13).s().p("AhXBYQgkglAAgzQAAgyAkglQAlgkAyAAQArAAAiAaIALAKQAkAlAAAyQAAAdgLAYQgKATgPAQQgYAWgdAJQgRAFgSAAQgyAAglgkg");
+	this.shape_6.setTransform(-53.1,0);
+	this.shape_7 = new cjs.Shape();
+	this.shape_7.graphics.rf(["rgba(255,255,250,0)","rgba(255,255,255,0)","rgba(255,255,255,0)","rgba(255,255,255,0)","rgba(255,255,255,0)"],[0,0,0.463,1,1],0,0,0,0,0,13).s().p("AhXBYQgkglAAgzQAAgyAkglQAlgkAyAAQArAAAiAaIALAKQAkAlAAAyQAAAdgLAYQgKATgPAQQgYAWgdAJQgRAFgSAAQgyAAglgkg");
+	this.shape_7.setTransform(-53.1,0);
+	this.shape_8 = new cjs.Shape();
+	this.shape_8.graphics.rf(["rgba(255,255,251,0.012)","rgba(255,255,254,0.141)","rgba(255,255,255,0)","rgba(255,255,255,0)","rgba(255,255,255,0)"],[0,0,0.518,1,1],0,0,0,0,0,13).s().p("AhXBYQgkglAAgzQAAgyAkglQAlgkAyAAQArAAAiAaIALAKQAkAlAAAyQAAAdgLAYQgKATgPAQQgYAWgdAJQgRAFgSAAQgyAAglgkg");
+	this.shape_8.setTransform(-53.1,0);
+	this.shape_9 = new cjs.Shape();
+	this.shape_9.graphics.rf(["rgba(255,255,251,0.024)","rgba(255,255,254,0.286)","rgba(255,255,255,0)","rgba(255,255,255,0)","rgba(255,255,255,0)"],[0,0,0.569,1,1],0,0,0,0,0,13).s().p("AhXBYQgkglAAgzQAAgyAkglQAlgkAyAAQArAAAiAaIALAKQAkAlAAAyQAAAdgLAYQgKATgPAQQgYAWgdAJQgRAFgSAAQgyAAglgkg");
+	this.shape_9.setTransform(-53.1,0);
+	this.shape_10 = new cjs.Shape();
+	this.shape_10.graphics.rf(["rgba(255,255,252,0.035)","rgba(255,255,253,0.427)","rgba(255,255,255,0)","rgba(255,255,255,0)","rgba(255,255,255,0)"],[0,0,0.624,1,1],0,0,0,0,0,13).s().p("AhXBYQgkglAAgzQAAgyAkglQAlgkAyAAQArAAAiAaIALAKQAkAlAAAyQAAAdgLAYQgKATgPAQQgYAWgdAJQgRAFgSAAQgyAAglgkg");
+	this.shape_10.setTransform(-53.1,0);
+	this.shape_11 = new cjs.Shape();
+	this.shape_11.graphics.rf(["rgba(255,255,253,0.051)","rgba(255,255,252,0.573)","rgba(255,255,255,0)","rgba(255,255,255,0)","rgba(255,255,255,0)"],[0,0,0.675,1,1],0,0,0,0,0,13).s().p("AhXBYQgkglAAgzQAAgyAkglQAlgkAyAAQArAAAiAaIALAKQAkAlAAAyQAAAdgLAYQgKATgPAQQgYAWgdAJQgRAFgSAAQgyAAglgkg");
+	this.shape_11.setTransform(-53.1,0);
+	this.shape_12 = new cjs.Shape();
+	this.shape_12.graphics.rf(["rgba(255,255,254,0.063)","rgba(255,255,251,0.714)","rgba(255,255,255,0)","rgba(255,255,255,0)","rgba(255,255,255,0)"],[0,0,0.729,1,1],0,0,0,0,0,13).s().p("AhXBYQgkglAAgzQAAgyAkglQAlgkAyAAQArAAAiAaIALAKQAkAlAAAyQAAAdgLAYQgKATgPAQQgYAWgdAJQgRAFgSAAQgyAAglgkg");
+	this.shape_12.setTransform(-53.1,0);
+	this.shape_13 = new cjs.Shape();
+	this.shape_13.graphics.rf(["rgba(255,255,254,0.075)","rgba(255,255,251,0.859)","rgba(255,255,255,0)","rgba(255,255,255,0)","rgba(255,255,255,0)"],[0,0,0.78,1,1],0,0,0,0,0,13).s().p("AhXBYQgkglAAgzQAAgyAkglQAlgkAyAAQArAAAiAaIALAKQAkAlAAAyQAAAdgLAYQgKATgPAQQgYAWgdAJQgRAFgSAAQgyAAglgkg");
+	this.shape_13.setTransform(-53.1,0);
+	this.shape_14 = new cjs.Shape();
+	this.shape_14.graphics.rf(["rgba(255,255,255,0.086)","#FFFFFA","rgba(255,255,255,0)","rgba(255,255,255,0)","rgba(255,255,255,0)"],[0,0,0.835,1,1],0,0,0,0,0,13).s().p("AhXBYQgkglAAgzQAAgyAkglQAlgkAyAAQArAAAiAaIALAKQAkAlAAAyQAAAdgLAYQgKATgPAQQgYAWgdAJQgRAFgSAAQgyAAglgkg");
+	this.shape_14.setTransform(-53.1,0);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape}]}).to({state:[{t:this.shape_1}]},1).to({state:[{t:this.shape_2}]},1).to({state:[{t:this.shape_3}]},1).to({state:[{t:this.shape_4}]},1).to({state:[{t:this.shape_5}]},1).to({state:[{t:this.shape_6}]},1).to({state:[{t:this.shape_7}]},1).to({state:[{t:this.shape_8}]},1).to({state:[{t:this.shape_9}]},1).to({state:[{t:this.shape_10}]},1).to({state:[{t:this.shape_11}]},1).to({state:[{t:this.shape_12}]},1).to({state:[{t:this.shape_13}]},1).to({state:[{t:this.shape_14}]},1).wait(1));
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-65.5,-12.4,24.9,24.9);
+(lib.Блик = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+	// Слой 1
+	this.instance = new lib.Анимация3("synched",0);
+	this.instance.setTransform(53.1,12.5);
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(7).to({startPosition:0},0).wait(7).to({startPosition:0},0).wait(1));
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-12.4,0,24.9,24.9);
+(lib.Красныйшар = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+	// Маска (mask)
+	var mask = new cjs.Shape();
+	mask._off = true;
+	mask.graphics.p("AhmBmQgqgqAAg8QAAg7AqgrQArgqA7AAQA7AAArAqQArArAAA7QAAA8grAqQgrArg7AAQg7AAgrgrg");
+	mask.setTransform(-0.3,26.5);
+	// Блик
+	this.instance = new lib.Блик("synched",0);
+	this.instance.setTransform(-8,16.4,1,1,0,0,0,20.3,12.5);
+	this.instance_1 = new lib.Анимация3("synched",6);
+	this.instance_1.setTransform(44,30.4);
+	this.instance_1._off = true;
+	this.instance.mask = this.instance_1.mask = mask;
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({_off:true,regX:0,regY:0,x:44,y:30.4,startPosition:6},6).wait(54));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).to({_off:false},6).to({x:53.1,y:28.6,startPosition:14},8).to({x:55.1,y:28.8,startPosition:0},1).to({x:71.5,y:30.3,startPosition:8},8).to({x:26.9,y:-4.5,startPosition:0},36).wait(1));
+	// лого
+	this.instance_2 = new lib.logo();
+	this.instance_2.setTransform(-16,11,0.08,0.08);
+	this.instance_2.mask = mask;
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(60));
+	// Слой 1
+	this.instance_3 = new lib.ballRed();
+	this.instance_3.setTransform(-20.4,0,0.87,0.87);
+	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(60));
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-20.4,0,40.9,45.3);
+// stage content:
+(lib.balls2017 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+	// Желтые шары
+	this.instance = new lib.Желтыйшар("synched",0);
+	this.instance.setTransform(349.8,184.2,1,1,0,0,0,1.5,10.5);
+	this.instance_1 = new lib.Желтыйшар("synched",0);
+	this.instance_1.setTransform(366.3,215.2,1,1,0,0,0,1.5,10.5);
+	this.instance_2 = new lib.Желтыйшар("synched",0);
+	this.instance_2.setTransform(355.8,250.2,1,1,0,0,0,1.5,10.5);
+	this.instance_3 = new lib.Желтыйшар("synched",0);
+	this.instance_3.setTransform(423.7,298.7,1,1,0,0,0,1.5,10.5);
+	this.instance_4 = new lib.Желтыйшар("synched",0);
+	this.instance_4.setTransform(361.7,284.2,1,1,0,0,0,1.5,10.5);
+	this.instance_5 = new lib.Желтыйшар("synched",0);
+	this.instance_5.setTransform(298.5,305.2,1,1,0,0,0,1.5,10.5);
+	this.instance_6 = new lib.Желтыйшар("synched",0);
+	this.instance_6.setTransform(320.8,435.8,1,1,0,0,0,0,10.5);
+	this.instance_7 = new lib.Желтыйшар("synched",0);
+	this.instance_7.setTransform(322.3,389.2,1,1,0,0,0,0,10.5);
+	this.instance_8 = new lib.Желтыйшар("synched",0);
+	this.instance_8.setTransform(261.9,420.3,1,1,0,0,0,0,10.5);
+	this.instance_9 = new lib.Желтыйшар("synched",0);
+	this.instance_9.setTransform(377.9,342.4,1,1,0,0,0,1.5,10.5);
+	this.instance_10 = new lib.Желтыйшар("synched",0);
+	this.instance_10.setTransform(384.6,435.3,1,1,0,0,0,0,10.5);
+	this.instance_11 = new lib.Желтыйшар("synched",0);
+	this.instance_11.setTransform(406.2,389.6,1,1,0,0,0,0.5,10);
+	this.instance_12 = new lib.Желтыйшар("synched",0);
+	this.instance_12.setTransform(303.5,347.9,1,1,0,0,0,0,6.5);
+	this.instance_13 = new lib.Желтыйшар("synched",0);
+	this.instance_13.setTransform(452.4,425.7,1,1,0,0,0,0,10.5);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_13},{t:this.instance_12},{t:this.instance_11},{t:this.instance_10},{t:this.instance_9},{t:this.instance_8},{t:this.instance_7},{t:this.instance_6},{t:this.instance_5},{t:this.instance_4},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).wait(90));
+	// Шары красные
+	this.instance_14 = new lib.Красныйшар("synched",19);
+	this.instance_14.setTransform(407.3,217.1,1,1,0,0,0,0,22.6);
+	this.instance_15 = new lib.Красныйшар("synched",4);
+	this.instance_15.setTransform(455,310.8,1,1,0,0,0,0,22.6);
+	this.instance_16 = new lib.Красныйшар("synched",13);
+	this.instance_16.setTransform(377,140.6,1,1,0,0,0,0,22.6);
+	this.instance_17 = new lib.Красныйшар("synched",19);
+	this.instance_17.setTransform(331.5,206.6,1,1,0,0,0,0,22.6);
+	this.instance_18 = new lib.Красныйшар("synched",8);
+	this.instance_18.setTransform(396.8,259,1,1,0,0,0,0,22.6);
+	this.instance_19 = new lib.Красныйшар("synched",19);
+	this.instance_19.setTransform(322.9,262.3,1,1,0,0,0,0,22.6);
+	this.instance_20 = new lib.Красныйшар("synched",19);
+	this.instance_20.setTransform(380.9,184.9,1,1,0,0,0,0,22.6);
+	this.instance_21 = new lib.Красныйшар("synched",19);
+	this.instance_21.setTransform(268.3,290.9,1,1,0,0,0,0,22.6);
+	this.instance_22 = new lib.Красныйшар("synched",6);
+	this.instance_22.setTransform(292.1,423.2,1,1,0,0,0,0,22.6);
+	this.instance_23 = new lib.Красныйшар("synched",0);
+	this.instance_23.setTransform(234.9,411.2,1,1,0,0,0,0,22.6);
+	this.instance_24 = new lib.Красныйшар("synched",19);
+	this.instance_24.setTransform(421.8,431.9,1,1,0,0,0,0,22.6);
+	this.instance_25 = new lib.Красныйшар("synched",0);
+	this.instance_25.setTransform(351,431.9,1,1,0,0,0,0,22.6);
+	this.instance_26 = new lib.Красныйшар("synched",13);
+	this.instance_26.setTransform(481.1,413.6,1,1,0,0,0,0,22.6);
+	this.instance_27 = new lib.Красныйшар("synched",19);
+	this.instance_27.setTransform(372.4,389.1,1,1,0,0,0,0,22.6);
+	this.instance_28 = new lib.Красныйшар("synched",4);
+	this.instance_28.setTransform(344.1,356,1,1,0,0,0,0,22.6);
+	this.instance_29 = new lib.Красныйшар("synched",8);
+	this.instance_29.setTransform(274.8,375.5,1,1,0,0,0,0,22.6);
+	this.instance_30 = new lib.Красныйшар("synched",0);
+	this.instance_30.setTransform(448.2,381.5,1,1,0,0,0,0,22.6);
+	this.instance_31 = new lib.Красныйшар("synched",21);
+	this.instance_31.setTransform(416.9,351.8,1,1,0,0,0,0,22.6);
+	this.instance_32 = new lib.Красныйшар("synched",15);
+	this.instance_32.setTransform(388.6,313.1,1,1,0,0,0,0,22.6);
+	this.instance_33 = new lib.Красныйшар("synched",6);
+	this.instance_33.setTransform(336.1,313.1,1,1,0,0,0,0,22.6);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_33},{t:this.instance_32},{t:this.instance_31},{t:this.instance_30},{t:this.instance_29},{t:this.instance_28},{t:this.instance_27},{t:this.instance_26},{t:this.instance_25},{t:this.instance_24},{t:this.instance_23},{t:this.instance_22},{t:this.instance_21},{t:this.instance_20},{t:this.instance_19},{t:this.instance_18},{t:this.instance_17},{t:this.instance_16},{t:this.instance_15},{t:this.instance_14}]}).wait(90));
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(579.4,343,287.1,336.5);
+})(lib = lib||{}, images = images||{}, createjs = createjs||{}, ss = ss||{});
+var lib, images, createjs, ss;
+</script>
+<script>
+var canvas, stage, exportRoot;
+function init() {
+	canvas = document.getElementById("canvas");
+	images = images||{};
+	ss = ss||{};
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", handleFileLoad);
+	loader.addEventListener("complete", handleComplete);
+	loader.loadManifest(lib.properties.manifest);
+}
+function handleFileLoad(evt) {	
+	if (evt.item.type == "image") { images[evt.item.id] = evt.result; }	
+}
+function handleComplete(evt) {
+	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+	var queue = evt.target;
+	var ssMetadata = lib.ssMetadata;
+	for(i=0; i<ssMetadata.length; i++) {
+		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+	}
+	exportRoot = new lib.balls2017();
+	stage = new createjs.Stage(canvas);
+	stage.addChild(exportRoot);	
+	//Registers the "tick" event listener.
+	createjs.Ticker.setFPS(lib.properties.fps);
+	createjs.Ticker.addEventListener("tick", stage);	    
+	//Code to support hidpi screens and responsive scaling.
+	(function(isResp, respDim, isScale, scaleType) {		
+		var lastW, lastH, lastS=1;		
+		window.addEventListener('resize', resizeCanvas);		
+		resizeCanvas();		
+		function resizeCanvas() {			
+			var w = lib.properties.width, h = lib.properties.height;			
+			var iw = window.innerWidth, ih=window.innerHeight;			
+			var pRatio = window.devicePixelRatio, xRatio=iw/w, yRatio=ih/h, sRatio=1;			
+			if(isResp) {                
+				if((respDim=='width'&&lastW==iw) || (respDim=='height'&&lastH==ih)) {                    
+					sRatio = lastS;                
+				}				
+				else if(!isScale) {					
+					if(iw<w || ih<h)						
+						sRatio = Math.min(xRatio, yRatio);				
+				}				
+				else if(scaleType==1) {					
+					sRatio = Math.min(xRatio, yRatio);				
+				}				
+				else if(scaleType==2) {					
+					sRatio = Math.max(xRatio, yRatio);				
+				}			
+			}			
+			canvas.width = w*pRatio*sRatio;			
+			canvas.height = h*pRatio*sRatio;
+			canvas.style.width = w*sRatio+'px';			
+			canvas.style.height = h*sRatio+'px';
+			stage.scaleX = pRatio*sRatio;			
+			stage.scaleY = pRatio*sRatio;			
+			lastW = iw; lastH = ih; lastS = sRatio;		
+		}
+	})(true,'both',false,1);	
+}
+</script>
+<!-- write your code here -->
+</head>
+<body onload="init();" style="margin:0px;">
+	<canvas id="canvas" width="730" height="450" style="display: block; background-color:rgba(0, 102, 153, 0.00)"></canvas>
+</body>
+</html>

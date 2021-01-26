@@ -1,0 +1,19 @@
+.wrapEl iframe.ballsFrame-2017 {
+    height: auto !important;
+    padding: 0;
+    width: 100% !important;
+    max-width: 700px;
+    min-height: 450px;
+    position: absolute;
+    z-index: 3;
+    left: 1%;
+    top: -21%;
+}
+
+.el-2017 {
+    left: 29%;
+    position: absolute;
+    top: 3%;
+    width: 34%;
+    z-index: 2;
+}
